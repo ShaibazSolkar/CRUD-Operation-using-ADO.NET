@@ -1,0 +1,20 @@
+﻿@model EmployeeModel
+
+@using CrudOperationAdo.Models
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Are you sure to Delete Record?</h2>
+@Model.ProductId<br/>
+@Model.ProductName<br />
+@Model.CategoryId<br />
+@Model.CategoryName<br />
+
+<form action="~/Home/Delete/@Model.ProductId" method="post">
+    <input type="submit" value="Delete" class="btn btn-warning" />
+</form>
+
+
+

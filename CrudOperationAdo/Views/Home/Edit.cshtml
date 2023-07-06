@@ -1,0 +1,23 @@
+﻿@model EmployeeModel
+@{
+    ViewBag.Title = "Edit";
+}
+@using CrudOperationAdo.Models
+
+<h2>Edit</h2>
+
+<form action="~/Home/Edit" method="post">
+
+    <input type="hidden" name="ProductId" value="@Model.ProductId"/>
+
+    <label>ProductName</label>
+    <input type="text" name="ProductName" class="form-control" value="@Model.ProductName" /><br />
+
+    <label>CategoryId</label>
+    <input type="text" name="CategoryId" class="form-control" value="@Model.CategoryId" /><br />
+
+    <label>CategoryName</label>
+    <input type="text" name="CategoryName" class="form-control" value="@Model.CategoryName" /><br />
+
+    <input type="submit" value="save" class="btn btn-success" />
+</form>

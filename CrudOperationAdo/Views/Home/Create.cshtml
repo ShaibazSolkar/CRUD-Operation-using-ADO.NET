@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+<form action="~/Home/Create" method="post">
+
+    <label>ProductId</label>
+    <input type="text" name="ProductId" class="form-control" /><br />
+
+    <label>ProductName</label>
+    <input type="text" name="ProductName" class="form-control" /><br />
+
+    <label>CategoryId</label>
+    <input type="text" name="CategoryId" class="form-control" /><br />
+
+    <label>CategoryName</label>
+    <input type="text" name="CategoryName" class="form-control" /><br />
+
+    <input type="submit" value="save" class="btn btn-success" />
+</form>
